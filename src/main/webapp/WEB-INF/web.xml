@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<!-- This web.xml file is not required when using Servlet 3.0 container,
+     see implementation details http://jersey.java.net/nonav/documentation/latest/jax-rs.html -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+ 
+  <servlet>
+    <description></description>
+    <display-name>AppointmentAPI</display-name>
+    <servlet-name>AppointmentAPI</servlet-name>
+    <servlet-class>com.isuru.AppointmentManagement.AppointmentAPI</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppointmentAPI</servlet-name>
+    <url-pattern>/AppointmentAPI</url-pattern>
+  </servlet-mapping>
+</web-app>
+</element>
